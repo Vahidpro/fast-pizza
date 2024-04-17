@@ -5,8 +5,10 @@ import Username from "../features/user/Username";
 function Header() {
   return (
     <>
-      <header className="border-b-2 border-pink-700 bg-pink-500 px-4 py-3 uppercase tracking-widest">
-        <Link to="/">Fast Pizza Co.</Link>
+      <header className=" flex items-center justify-around border-b-2 border-pink-700 bg-pink-500 px-4 py-3  ">
+        <Link to="/" className="font-bold uppercase tracking-widest">
+          Fast Pizza Co.
+        </Link>
 
         <SearchOrder />
 

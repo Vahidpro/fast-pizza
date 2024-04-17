@@ -2,26 +2,27 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function SearchOrder() {
-	const [query, setQuery] = useState("");
-	const navigate = useNavigate();
+  const [query, setQuery] = useState("");
+  const navigate = useNavigate();
 
-	function submitHandler(e) {
-		e.preventDefault();
+  function submitHandler(e) {
+    e.preventDefault();
 
-		if (!query) return;
+    if (!query) return;
 
-		navigate(`/order/${query}`);
-		setQuery("");
-	}
-	return (
-		<form onSubmit={submitHandler}>
-			<input
-				placeholder="Search Order #"
-				value={query}
-				onChange={(e) => setQuery(e.target.value)}
-			/>
-		</form>
-	);
+    navigate(`/order/${query}`);
+    setQuery("");
+  }
+  return (
+    <form onSubmit={submitHandler}>
+      <input
+        className="rounded-md p-1 "
+        placeholder="Search Order #"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+    </form>
+  );
 }
 
 export default SearchOrder;
