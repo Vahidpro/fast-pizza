@@ -3,7 +3,6 @@ import CartOverview from "../features/cart/CartOverview";
 import Header from "./Header";
 import Loader from "./Loader";
 import CreateUser from "../features/user/CreateUser";
-import CreateOrder from "../features/order/CreateOrder";
 
 function AppLayout() {
   const navigation = useNavigation();
