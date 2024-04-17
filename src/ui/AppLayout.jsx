@@ -3,6 +3,7 @@ import CartOverview from "../features/cart/CartOverview";
 import Header from "./Header";
 import Loader from "./Loader";
 import CreateUser from "../features/user/CreateUser";
+import CreateOrder from "../features/order/CreateOrder";
 
 function AppLayout() {
   const navigation = useNavigation();
@@ -15,6 +16,7 @@ function AppLayout() {
         <main className="mx-auto max-w-3xl ">
           <Outlet />
         </main>
+        <CreateUser />
       </div>
 
       <CartOverview />
