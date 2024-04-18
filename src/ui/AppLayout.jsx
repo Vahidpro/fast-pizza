@@ -15,7 +15,6 @@ function AppLayout() {
         <main className="mx-auto max-w-3xl ">
           <Outlet />
         </main>
-        <CreateUser />
       </div>
 
       <CartOverview />
