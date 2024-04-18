@@ -11,7 +11,7 @@ function MenuItem({ pizza }) {
     const newItem = {
       pizzaId: id,
       name,
-      quantitiy: 1,
+      quantity: 1,
       unitPrice,
       totalPrice: unitPrice * 1,
     };
