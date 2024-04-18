@@ -8,7 +8,8 @@ function Button({ children, disabled, to, type, onClick }) {
     primary: base + "px-4 py-3 md:px-6 md:py:4",
     secondary:
       "inline-block text-sm rounded-full font-semibold uppercase tracking-wide transition-colors text-stone-400 duration-300 disabled:cursor-not-allowed disabled:bg-gray-300 px-4 py-2 border-2 border-stone-300 px-4 py-2.5md:px-6 md:py:4 m-3 hover:bg-stone-300 hover:text-stone-800 ",
-    small: base + "px-4 py-2 md:px-5 md:py:2.5 text-sm",
+    small: base + "px-2 py-2 md:px-2.5 md:py:2.5 text-xs",
+    round: base + "px-2.5 py-1 md:px-3.5 md:py:2 text-sm",
   };
 
   if (to)
